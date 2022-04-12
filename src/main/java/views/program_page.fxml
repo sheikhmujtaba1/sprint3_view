@@ -83,12 +83,12 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label text="Label">
+                        <Label text="Type a message below to get started.">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label text="Label">
+                        <Label text="Concord is a BBB product. All rights reserved.">
                            <font>
                               <Font size="20.0" />
                            </font>
