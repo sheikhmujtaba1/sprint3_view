@@ -8,21 +8,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="684.0" prefWidth="1216.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="684.0" prefWidth="1216.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <SplitPane dividerPositions="0.4" prefHeight="684.0" prefWidth="472.0" style="-fx-background-color: #40739e#40739e;" BorderPane.alignment="CENTER">
          <items>
-            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 15;">
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 15;">
                <children>
-                  <Button mnemonicParsing="false" text="Program 1">
+                  <Button alignment="CENTER" mnemonicParsing="false" text="User">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="26.0" />
                      </font>
                   </Button>
+                  <Line endX="100.0" startX="-100.0" />
                   <Button mnemonicParsing="false" text="Bad Boys">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="26.0" />
@@ -58,11 +59,11 @@
       </SplitPane>
    </left>
    <center>
-      <ScrollPane prefHeight="684.0" prefWidth="527.0" style="-fx-background-color: #7f8fa6#7f8fa6;" BorderPane.alignment="CENTER">
+      <ScrollPane prefHeight="684.0" prefWidth="527.0" style="-fx-background-color: #7f8fa6#7f8fa6; -fx-fit-to-height: true; -fx-fit-to-width: true;" BorderPane.alignment="CENTER">
          <content>
             <Pane prefHeight="683.0" prefWidth="554.0" style="-fx-background-color: #7f8fa6#7f8fa6;">
                <children>
-                  <VBox prefHeight="668.0" prefWidth="543.0" style="-fx-spacing: 8;">
+                  <VBox alignment="TOP_CENTER" prefHeight="668.0" prefWidth="543.0" style="-fx-spacing: 8;">
                      <children>
                         <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="543.0">
                            <children>
@@ -73,28 +74,31 @@
                               </Label>
                            </children>
                         </HBox>
-                        <Label text="Welcome to Concord! We're excited to have you here!">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                        <Label style="-fx-wrap-text: true;" text="This label is going to be really long for testing purposes, and I mean REALLY long. I need it to stretch across the page so I see what it looks like when a label overflows into the next line." wrapText="true">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                        <Label text="Type a message below to get started.">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                        <Label text="Concord is a BBB product. All rights reserved.">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                        <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                        <HBox alignment="BASELINE_LEFT" prefHeight="66.0" prefWidth="543.0" style="-fx-alignment: bottom-center;">
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 8;">
+                           <children>
+                              <Label text="Welcome to Concord! We're excited to have you here!">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label style="-fx-wrap-text: true;" text="This label is going to be really long for testing purposes, and I mean REALLY long. I need it to stretch across the page so I see what it looks like when a label overflows into the next line." wrapText="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Type a message below to get started.">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Concord is a BBB product. All rights reserved.">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="BASELINE_CENTER" prefHeight="66.0" prefWidth="543.0" style="-fx-alignment: bottom-center;">
                            <children>
                               <TextField prefHeight="113.0" prefWidth="543.0" promptText="The pen is mightier than the sword!">
                                  <font>
