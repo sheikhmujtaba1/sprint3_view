@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="297.0" prefWidth="386.0" BorderPane.alignment="CENTER">
         <items>
@@ -23,6 +22,7 @@
                   </ImageView>
                   <Button layoutX="210.0" layoutY="98.0" mnemonicParsing="false" text="Edit Imformation" />
                   <Label layoutX="210.0" layoutY="22.0" text="Username" />
+                  <Button layoutX="326.0" layoutY="1.0" mnemonicParsing="false" text="Back" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
