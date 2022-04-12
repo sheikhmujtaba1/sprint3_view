@@ -20,7 +20,7 @@
                         <Image url="@屏幕快照%202022-04-11%2022.18.03.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="210.0" layoutY="98.0" mnemonicParsing="false" text="Edit Imformation" />
+                  <Button layoutX="210.0" layoutY="98.0" mnemonicParsing="false" text="Edit Information" />
                   <Label layoutX="210.0" layoutY="22.0" text="Username" />
                   <Button layoutX="326.0" layoutY="1.0" mnemonicParsing="false" text="Back" />
                </children>
