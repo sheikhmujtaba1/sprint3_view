@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
-import main.Main;
+import javafx.scene.layout.Pane;
 
 public class view_model
 {
@@ -23,7 +23,7 @@ public class view_model
 		loader.setLocation(view_model.class.getResource("../views/program_page.fxml"));
 		try
 		{
-			BorderPane view = loader.load();
+			Pane view = loader.load();
 			loginview.setCenter(view);
 		} catch (IOException e)
 		{

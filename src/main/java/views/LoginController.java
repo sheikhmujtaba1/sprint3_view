@@ -4,21 +4,30 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import model.view_model;
 
 public class LoginController
 {
-	    @FXML
-	    private Button loginButton;
+	view_model model;
+	
+	
+	public void setModel(view_model newModel)
+	{
+		model = newModel;
+	}
+	
+	@FXML
+	private Button loginButton;
 
-	    @FXML
-	    private TextField passwordTextBox;
+	@FXML
+	private TextField passwordTextBox;
 
-	    @FXML
-	    private TextField usernameTextBox;
+	@FXML
+	private TextField usernameTextBox;
 
-	    @FXML
-	    void onClickLogin(ActionEvent event) {
-
-	    	System.out.println("Login clicked");
-	    }
+	@FXML
+	void onClickLogin(ActionEvent event) 
+	{
+		model.login();
+	}
 }

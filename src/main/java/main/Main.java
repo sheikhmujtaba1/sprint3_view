@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import model.view_model;
+import views.LoginController;
 
 public class Main extends Application
 {
@@ -15,6 +17,9 @@ public class Main extends Application
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("../views/login_page.fxml"));
 		BorderPane view = loader.load();
+		LoginController cont = loader.getController();
+		view_model vm = new view_model(view);
+		cont.setModel(vm);
 		
 		Scene s = new Scene(view);
 		stage.setScene(s);
