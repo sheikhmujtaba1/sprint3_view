@@ -12,13 +12,13 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="684.0" prefWidth="1216.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="684.0" prefWidth="1216.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ProgramController">
    <left>
       <SplitPane dividerPositions="0.4" prefHeight="684.0" prefWidth="472.0" style="-fx-background-color: #40739e#40739e;" BorderPane.alignment="CENTER">
          <items>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 15;">
                <children>
-                  <Button alignment="CENTER" mnemonicParsing="false" text="User">
+                  <Button fx:id="userButton" alignment="CENTER" mnemonicParsing="false" onAction="#OnClickUser" text="User">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="26.0" />
                      </font>

@@ -4,14 +4,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import model.view_model;
+import model.navigation_model;
 
 public class LoginController
 {
-	view_model model;
+	navigation_model model;
 	
 	
-	public void setModel(view_model newModel)
+	public void setModel(navigation_model newModel)
 	{
 		model = newModel;
 	}
@@ -30,4 +30,5 @@ public class LoginController
 	{
 		model.login();
 	}
+	
 }
