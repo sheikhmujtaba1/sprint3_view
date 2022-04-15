@@ -22,12 +22,17 @@ public class LoginController
 	
 	@FXML
 	private Button loginButton;
+	
+	@FXML 
+	private Button registerButton;
 
 	@FXML
 	private PasswordField passwordPasswordField;
 	
 	@FXML
 	private TextField usernameTextBox;
+	
+	
 
 	@FXML
 	void onClickLogin(ActionEvent event) 

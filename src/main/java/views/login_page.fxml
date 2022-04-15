@@ -36,4 +36,12 @@
          </children>
       </VBox>
    </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="529.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Don't have an account?" />
+            <Button fx:id = "registerButton" mnemonicParsing="false" text="Register" />
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>
