@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import model.navigation_model;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 public class LoginController
 {
@@ -15,6 +18,8 @@ public class LoginController
 	{
 		model = newModel;
 	}
+	
+	private Stage stage;
 	
 	@FXML
 	private Button loginButton;
@@ -28,7 +33,17 @@ public class LoginController
 	@FXML
 	void onClickLogin(ActionEvent event) 
 	{
+		System.out.println("model.login();");
 		model.login();
+	}
+	
+	public void launchProgramScreen(Stage stage)
+	{
+		this.stage = stage;
+
+         //Don't forget to add below code in every controller
+         stage.hide();
+         stage.show();
 	}
 	
 }

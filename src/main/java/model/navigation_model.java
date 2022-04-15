@@ -46,6 +46,7 @@ public class navigation_model
 			loginview.setCenter(view);
 			UserController cont = loader.getController();
 			cont.setModel(this);
+			
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block

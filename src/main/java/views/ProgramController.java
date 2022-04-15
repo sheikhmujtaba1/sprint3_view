@@ -19,7 +19,8 @@ public class ProgramController
 
     @FXML
     void OnClickUser(ActionEvent event) {
+    	System.out.println("model.user_display();");
     	model.user_display();
     }
-		
+	
 }
