@@ -3,10 +3,9 @@ package views;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import model.navigation_model;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class LoginController
@@ -25,8 +24,8 @@ public class LoginController
 	private Button loginButton;
 
 	@FXML
-	private TextField passwordTextBox;
-
+	private PasswordField passwordPasswordField;
+	
 	@FXML
 	private TextField usernameTextBox;
 
