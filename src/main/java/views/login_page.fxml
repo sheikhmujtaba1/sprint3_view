@@ -33,15 +33,13 @@
                </children>
             </HBox>
             <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onClickLogin" text="Login" />
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="529.0">
+               <children>
+                  <Label text="Don't have an account?" />
+                  <Button mnemonicParsing="false" text="Register" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </center>
-   <bottom>
-      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="529.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label text="Don't have an account?" />
-            <Button mnemonicParsing="false" text="Register" />
-         </children>
-      </HBox>
-   </bottom>
 </BorderPane>
