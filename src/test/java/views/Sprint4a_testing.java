@@ -29,7 +29,7 @@ public class Sprint4a_testing
 		{
 			view = loader.load();
 			LoginController cont = loader.getController();
-			navigation_model vm = new navigation_model(view);
+			navigation_model vm = new navigation_model(view, stage);
 			cont.setModel(vm);
 			Scene s = new Scene(view);
 			
