@@ -21,8 +21,7 @@ navigation_model model;
     @FXML
     void OnClickBack(ActionEvent event)
     {
-    	System.out.println("model.back_to_program();");
-    	model.back_to_program();
+    	model.open_program();
     }
 	
 }

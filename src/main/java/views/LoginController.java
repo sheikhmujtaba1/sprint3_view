@@ -38,7 +38,7 @@ public class LoginController
 	void onClickLogin(ActionEvent event) 
 	{
 		System.out.println("model.login();");
-		model.login();
+		model.open_program();
 	}
 	
 	public void launchProgramScreen(Stage stage)
