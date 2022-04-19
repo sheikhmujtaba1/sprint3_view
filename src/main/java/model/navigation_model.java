@@ -21,6 +21,10 @@ public class navigation_model
 		d_m.add_program("P1");
 		d_m.add_program("P2");
 		
+		d_m.add_channel("Channel 1");
+		d_m.add_channel("Channel 2");
+		d_m.add_channel("Channel 3");
+		
 	}
 	
 	
