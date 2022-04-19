@@ -1,10 +1,13 @@
 package model;
 
+import java.awt.geom.Rectangle2D;
 import java.io.IOException;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Screen;
+import javafx.stage.Stage;
 import views.ProgramController;
 import views.UserController;
 
@@ -13,8 +16,9 @@ public class navigation_model
 	
 	BorderPane loginview;
 	data_model d_m;
+	Stage stage;
 	
-	public navigation_model(BorderPane view)
+	public navigation_model(BorderPane view, Stage newStage)
 	{
 		loginview = view;
 		d_m = new data_model();
@@ -32,6 +36,8 @@ public class navigation_model
 		d_m.add_user("Dr. Bradshaunious");
 		d_m.add_user("Eli ganooch");
 		
+		stage = newStage;
+		
 	}
 	
 	
@@ -41,6 +47,16 @@ public class navigation_model
 		loader.setLocation(navigation_model.class.getResource("../views/program_page.fxml"));
 		try
 		{
+			int width = 1216;
+			int height = 684;
+			stage.setWidth(width);
+			stage.setHeight(height);
+			//stage.centerOnScreen();
+			
+			javafx.geometry.Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+		    stage.setX((screenBounds.getWidth() - width) / 2); 
+		    stage.setY((screenBounds.getHeight() - height) / 2);  
+		    
 			Pane view = loader.load();
 			loginview.setCenter(view);
 			ProgramController cont = loader.getController();
