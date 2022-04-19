@@ -25,6 +25,13 @@ public class navigation_model
 		d_m.add_channel("Channel 2");
 		d_m.add_channel("Channel 3");
 		
+		d_m.add_message("Welcome to channel 1");
+		d_m.add_message("Word hard play hard");
+		d_m.add_message("We ballin' out here");
+		
+		d_m.add_user("Dr. Bradshaunious");
+		d_m.add_user("Eli ganooch");
+		
 	}
 	
 	

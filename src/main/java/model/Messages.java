@@ -13,4 +13,10 @@ public class Messages
 	{
 		this.msg = msg;
 	}
+
+	@Override
+	public String toString()
+	{
+		return msg;
+	}
 }

@@ -7,6 +7,8 @@ public class data_model
 {
 	public ObservableList<Program> program_list  = FXCollections.observableArrayList();
 	public ObservableList<Channel> channel_list  = FXCollections.observableArrayList();
+	public ObservableList<Messages> message_list  = FXCollections.observableArrayList();
+	public ObservableList<user> user_list  = FXCollections.observableArrayList();
 		
 	public data_model()
 	{
@@ -23,5 +25,14 @@ public class data_model
 		channel_list.add(new Channel(c_name));
 	}
 	
+	public void add_message(String msg)
+	{
+		message_list.add(new Messages(msg));
+	}
+	
+	public void add_user(String username)
+	{
+		user_list.add(new user(username));
+	}
 
 }

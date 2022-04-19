@@ -17,7 +17,7 @@
          <items>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 15;">
                <children>
-                  <Button fx:id="userButton" alignment="CENTER" mnemonicParsing="false" onAction="#OnClickUser" text="User">
+                  <Button id="user_B" fx:id="userButton" alignment="CENTER" mnemonicParsing="false" onAction="#OnClickUser" text="User">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="26.0" />
                      </font>
@@ -43,7 +43,7 @@
                </font>
             </Label>
             <Line endX="100.0" startX="-100.0" />
-            <ListView prefHeight="635.0" prefWidth="201.0" />
+            <ListView fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
          </children>
       </VBox>
    </right>
@@ -59,7 +59,7 @@
                   </Label>
                </children>
             </HBox>
-            <ListView prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="Message_LV" prefHeight="200.0" prefWidth="200.0" />
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 8;">
                <children>
                   <Label text="Welcome to Concord! We're excited to have you here!">
