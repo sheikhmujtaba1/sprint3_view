@@ -1,6 +1,5 @@
 package model;
 
-import java.awt.geom.Rectangle2D;
 import java.io.IOException;
 
 import javafx.fxml.FXMLLoader;

@@ -98,7 +98,6 @@ public class Sprint4a_testing
 			clickButton(robot, "#back_B");
 			Thread.sleep(1500);
 			
-			
 			ListView<Program> p_list = getListView(robot);
 			assertEquals(p_list.getItems().size(), 2);
 		} catch (InterruptedException e)
@@ -107,11 +106,6 @@ public class Sprint4a_testing
 			e.printStackTrace();
 		}
 		
-	}
-	
-	@Test
-	public void testListView(FxRobot robot)
-	{
 	}
 	
 	

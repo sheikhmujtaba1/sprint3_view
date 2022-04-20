@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="684.0" prefWidth="1216.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ProgramController">
+<BorderPane prefHeight="684.0" prefWidth="1216.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ProgramController">
    <left>
       <SplitPane dividerPositions="0.4" prefHeight="684.0" prefWidth="472.0" style="-fx-background-color: #40739e#40739e;" BorderPane.alignment="CENTER">
          <items>
@@ -23,9 +23,6 @@
                      </font>
                   </Button>
                   <Line endX="100.0" startX="-100.0" />
-<<<<<<< HEAD
-                  <ListView id="Program_LV" fx:id="Program_LV" prefHeight="613.0" prefWidth="201.0" />
-=======
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 5;">
                      <children>
                         <Button mnemonicParsing="false" text="Add Programs" />
@@ -33,21 +30,16 @@
                      </children>
                   </HBox>
                   <ListView fx:id="Program_LV" prefHeight="613.0" prefWidth="201.0" />
->>>>>>> 9fbb18e5b3613625a2c7f4237d57bed65e2a1e2f
                </children>
             </VBox>
             <VBox prefHeight="682.0" prefWidth="460.0" style="-fx-spacing: 10; -fx-pref-width: 500;">
                <children>
-<<<<<<< HEAD
-                  <ListView id="Channels_LV" fx:id="channel_LV" prefHeight="700.0" prefWidth="263.0" />
-=======
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Button mnemonicParsing="false" text="Add Channels" />
                      </children>
                   </HBox>
-                  <ListView fx:id="channel_LV" prefHeight="700.0" prefWidth="263.0" />
->>>>>>> 9fbb18e5b3613625a2c7f4237d57bed65e2a1e2f
+                  <ListView id="channels_LV" fx:id="channel_LV" prefHeight="700.0" prefWidth="263.0" />
                </children>
             </VBox>
          </items>
@@ -62,12 +54,8 @@
                </font>
             </Label>
             <Line endX="100.0" startX="-100.0" />
-<<<<<<< HEAD
-            <ListView id="Users_LV" fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
-=======
             <Button mnemonicParsing="false" text="Add Users" />
-            <ListView fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
->>>>>>> 9fbb18e5b3613625a2c7f4237d57bed65e2a1e2f
+            <ListView id="users_LV" fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
          </children>
       </VBox>
    </right>
@@ -83,35 +71,7 @@
                   </Label>
                </children>
             </HBox>
-<<<<<<< HEAD
-            <ListView id="Messages_LV" fx:id="Message_LV" prefHeight="200.0" prefWidth="200.0" />
-            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 8;">
-               <children>
-                  <Label text="Welcome to Concord! We're excited to have you here!">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label style="-fx-wrap-text: true;" text="This label is going to be really long for testing purposes, and I mean REALLY long. I need it to stretch across the page so I see what it looks like when a label overflows into the next line." wrapText="true">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label text="Type a message below to get started.">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label text="Concord is a BBB product. All rights reserved.">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-               </children>
-            </VBox>
-=======
-            <ListView fx:id="Message_LV" prefHeight="577.0" prefWidth="543.0" />
->>>>>>> 9fbb18e5b3613625a2c7f4237d57bed65e2a1e2f
+            <ListView id="Messages_LV" fx:id="Message_LV" prefHeight="577.0" prefWidth="543.0" />
             <HBox alignment="BASELINE_CENTER" prefHeight="66.0" prefWidth="543.0" style="-fx-alignment: bottom-center;">
                <children>
                   <TextField prefHeight="113.0" prefWidth="543.0" promptText="The pen is mightier than the sword!">
