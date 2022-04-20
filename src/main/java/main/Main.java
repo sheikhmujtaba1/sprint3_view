@@ -32,7 +32,7 @@ public class Main extends Application
 		loader.setLocation(Main.class.getResource("../views/login_page.fxml"));
 		BorderPane view = loader.load();
 		LoginController cont = loader.getController();
-		navigation_model vm = new navigation_model(view);
+		navigation_model vm = new navigation_model(view, stage);
 		cont.setModel(vm);
 		
 		
