@@ -23,12 +23,12 @@
                      </font>
                   </Button>
                   <Line endX="100.0" startX="-100.0" />
-                  <ListView fx:id="Program_LV" prefHeight="613.0" prefWidth="201.0" />
+                  <ListView id="Program_LV" fx:id="Program_LV" prefHeight="613.0" prefWidth="201.0" />
                </children>
             </VBox>
             <VBox prefHeight="682.0" prefWidth="460.0" style="-fx-spacing: 10; -fx-pref-width: 500;">
                <children>
-                  <ListView fx:id="channel_LV" prefHeight="700.0" prefWidth="263.0" />
+                  <ListView id="Channels_LV" fx:id="channel_LV" prefHeight="700.0" prefWidth="263.0" />
                </children>
             </VBox>
          </items>
@@ -43,7 +43,7 @@
                </font>
             </Label>
             <Line endX="100.0" startX="-100.0" />
-            <ListView fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
+            <ListView id="Users_LV" fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
          </children>
       </VBox>
    </right>
@@ -59,7 +59,7 @@
                   </Label>
                </children>
             </HBox>
-            <ListView fx:id="Message_LV" prefHeight="200.0" prefWidth="200.0" />
+            <ListView id="Messages_LV" fx:id="Message_LV" prefHeight="200.0" prefWidth="200.0" />
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 8;">
                <children>
                   <Label text="Welcome to Concord! We're excited to have you here!">

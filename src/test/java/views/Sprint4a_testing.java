@@ -1,8 +1,11 @@
 package views;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.io.File;
 import java.io.IOException;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
@@ -11,9 +14,11 @@ import org.testfx.framework.junit5.Start;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ListView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import main.Main;
+import model.Program;
 import model.navigation_model;
 
 @ExtendWith(ApplicationExtension.class)
@@ -71,6 +76,12 @@ public class Sprint4a_testing
 		robot.clickOn(css_id);
 	}
 	
+	@SuppressWarnings("unchecked")
+	ListView<Program> getListView(FxRobot robot)
+	{
+		return (ListView<Program>) robot.lookup("#Program_LV").queryAll().iterator().next();
+	}
+	
 	@Test
 	public void testTransitions(FxRobot robot)
 	{
@@ -86,12 +97,21 @@ public class Sprint4a_testing
 			Thread.sleep(1500);
 			clickButton(robot, "#back_B");
 			Thread.sleep(1500);
+			
+			
+			ListView<Program> p_list = getListView(robot);
+			assertEquals(p_list.getItems().size(), 2);
 		} catch (InterruptedException e)
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+	}
+	
+	@Test
+	public void testListView(FxRobot robot)
+	{
 	}
 	
 	
