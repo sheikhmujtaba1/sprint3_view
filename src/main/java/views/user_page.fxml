@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="422.0" prefWidth="506.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UserController">
+<BorderPane prefHeight="422.0" prefWidth="506.0" style="-fx-pref-width: 1216; -fx-pref-height: 684;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UserController">
    <center>
       <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="297.0" prefWidth="386.0" BorderPane.alignment="CENTER">
         <items>
@@ -17,7 +17,7 @@
                <children>
                   <ImageView fitHeight="150.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@屏幕快照%202022-04-11%2022.18.03.png" />
+                        <Image url="@ConcordLogo2.png" />
                      </image>
                   </ImageView>
                   <Button layoutX="210.0" layoutY="98.0" mnemonicParsing="false" text="Edit Information" />
