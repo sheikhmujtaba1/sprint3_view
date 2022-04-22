@@ -36,7 +36,7 @@
             <HBox alignment="CENTER" prefHeight="46.0" prefWidth="529.0">
                <children>
                   <Label text="Don't have an account?" />
-                  <Button mnemonicParsing="false" text="Register" />
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#onClickRegister" text="Register" />
                </children>
             </HBox>
          </children>

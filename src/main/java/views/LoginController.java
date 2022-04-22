@@ -35,9 +35,14 @@ public class LoginController
 	@FXML
 	void onClickLogin(ActionEvent event) 
 	{
-		System.out.println("model.login();");
 		model.open_program();
 	}
+	
+	 @FXML
+	    void onClickRegister(ActionEvent event) 
+	 	{
+		 	model.registration_display();
+	    }
 	
 	
 }

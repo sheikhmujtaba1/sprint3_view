@@ -7,7 +7,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import views.LoginController;
 import views.ProgramController;
+import views.RegisterController;
 import views.UserController;
 
 public class navigation_model
@@ -79,6 +81,24 @@ public class navigation_model
 			Pane view = loader.load();
 			loginview.setCenter(view);
 			UserController cont = loader.getController();
+			cont.setModel(this);
+			
+		} catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void registration_display()
+	{
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(navigation_model.class.getResource("../views/registration_page.fxml"));
+		try
+		{
+			Pane view = loader.load();
+			loginview.setCenter(view);
+			RegisterController cont = loader.getController();
 			cont.setModel(this);
 			
 		} catch (IOException e)
