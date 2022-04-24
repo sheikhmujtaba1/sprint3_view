@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="296.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="296.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.RegisterController">
    <top>
 <!--       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Concord" BorderPane.alignment="CENTER" /> -->
    </top>
@@ -34,8 +34,8 @@
                   <TextField />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" text="Register" textAlignment="CENTER" />
-            <Button mnemonicParsing="false" text="Go back to Log In" />
+            <Button fx:id="Register_B" mnemonicParsing="false" onAction="#OnClickRegister" text="Register" textAlignment="CENTER" />
+            <Button fx:id="Back_B" mnemonicParsing="false" onAction="#OnClickBack" text="Go back to Log In" />
          </children>
       </VBox>
    </center>

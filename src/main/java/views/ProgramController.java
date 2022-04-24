@@ -25,6 +25,9 @@ public class ProgramController
 	@FXML
     private Button userButton;
 	
+	@FXML
+    private Button addProgram_B;
+	
 	 @FXML
 	 private ListView<?> Message_LV;
 	 
@@ -62,6 +65,10 @@ public class ProgramController
     	model.user_display();
     }
     
+    @FXML
+    void OnClickAddProgram(ActionEvent event) {
+
+    }
 	
     
 }

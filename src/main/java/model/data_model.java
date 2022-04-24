@@ -9,7 +9,8 @@ public class data_model
 	public ObservableList<Channel> channel_list  = FXCollections.observableArrayList();
 	public ObservableList<Messages> message_list  = FXCollections.observableArrayList();
 	public ObservableList<user> user_list  = FXCollections.observableArrayList();
-		
+	public String username = "Eli_Gooch";
+	
 	public data_model()
 	{
 		

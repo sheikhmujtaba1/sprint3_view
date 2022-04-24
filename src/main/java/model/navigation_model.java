@@ -81,7 +81,7 @@ public class navigation_model
 			Pane view = loader.load();
 			loginview.setCenter(view);
 			UserController cont = loader.getController();
-			cont.setModel(this);
+			cont.setModel(this, d_m);
 			
 		} catch (IOException e)
 		{
@@ -107,6 +107,25 @@ public class navigation_model
 			e.printStackTrace();
 		}
 	}
+	
+	public void open_login()
+	{
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(navigation_model.class.getResource("../views/login_page.fxml"));
+		try
+		{
+			Pane view = loader.load();
+			loginview.setCenter(view);
+			LoginController cont = loader.getController();
+			cont.setModel(this);
+			
+		} catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	
 	
 }
