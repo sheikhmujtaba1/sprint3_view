@@ -17,6 +17,10 @@ public class LoginController
 		model = newModel;
 	}
 
+	public LoginController()
+	{
+		
+	}
 	
 	@FXML
 	private Button loginButton;

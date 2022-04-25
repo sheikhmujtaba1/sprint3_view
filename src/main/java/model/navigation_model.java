@@ -7,6 +7,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import views.AddChannelController;
+import views.AddProgramController;
+import views.AddUserController;
 import views.LoginController;
 import views.ProgramController;
 import views.RegisterController;
@@ -126,6 +129,61 @@ public class navigation_model
 		}
 	}
 	
+	public void open_AddPrograms()
+	{
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(navigation_model.class.getResource("../views/add_program_page.fxml"));
+		try
+		{
+			Pane view = loader.load();
+			loginview.setCenter(view);
+			AddProgramController cont = loader.getController();
+			cont.setModel(this, d_m);
+			
+		} catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 	
+	public void open_AddChannels()
+	{
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(navigation_model.class.getResource("../views/add_channel_page.fxml"));
+		try
+		{
+			Pane view = loader.load();
+			loginview.setCenter(view);
+			AddChannelController cont = loader.getController();
+			cont.setModel(this, d_m);
+			
+		} catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public void open_AddUser()
+	{
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(navigation_model.class.getResource("../views/add_user_page.fxml"));
+		try
+		{
+			Pane view = loader.load();
+			loginview.setCenter(view);
+			AddUserController cont = loader.getController();
+			cont.setModel(this, d_m);
+			
+		} catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 	
 }

@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import model.Channel;
 import model.Messages;
 import model.Program;
@@ -17,22 +18,36 @@ public class ProgramController
 	data_model d_m;
 	
 	@FXML
+    private Button AddUsers_B;
+
+    @FXML
+    private ListView<?> Message_LV;
+
+    @FXML
+    private TextField Msg_TB;
+
+    @FXML
     private ListView<?> Program_LV;
-	
-	@FXML
-	private ListView<?> channel_LV;
-	 
-	@FXML
-    private Button userButton;
-	
-	@FXML
+
+    @FXML
+    private Button Send_B;
+
+    @FXML
+    private ListView<?> User_LV;
+
+    @FXML
+    private Button addChannel_B;
+
+    @FXML
     private Button addProgram_B;
-	
-	 @FXML
-	 private ListView<?> Message_LV;
-	 
-	 @FXML
-	 private ListView<?> User_LV;
+
+    @FXML
+    private ListView<?> channel_LV;
+
+    @FXML
+    private Button userButton;
+
+
 
 	
 	public void setModel(navigation_model new_model, data_model new_dm)
@@ -66,8 +81,33 @@ public class ProgramController
     }
     
     @FXML
-    void OnClickAddProgram(ActionEvent event) {
+    void OnClickAddProgram(ActionEvent event) 
+    {
+    	model.open_AddPrograms();
+    	
+    }
+    
+    @FXML
+    void OnClickAddChannel(ActionEvent event) 
+    {
+    	model.open_AddChannels();
+    }
+    
+    @FXML
+    void OnClickAddUser(ActionEvent event) 
+    {
+    	model.open_AddUser();
+    }
 
+    @FXML
+    void OnClickSend(ActionEvent event) 
+    {
+    	String msg = Msg_TB.textProperty().get();
+    	if(msg != "")
+    	{
+    		d_m.add_message(msg);
+        	Msg_TB.setText("");
+    	}
     }
 	
     

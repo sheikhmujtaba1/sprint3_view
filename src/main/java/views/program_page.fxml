@@ -36,7 +36,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Add Channels" />
+                        <Button fx:id="addChannel_B" mnemonicParsing="false" onAction="#OnClickAddChannel" text="Add Channels" />
                      </children>
                   </HBox>
                   <ListView id="channels_LV" fx:id="channel_LV" prefHeight="700.0" prefWidth="263.0" />
@@ -54,7 +54,7 @@
                </font>
             </Label>
             <Line endX="100.0" startX="-100.0" />
-            <Button mnemonicParsing="false" text="Add Users" />
+            <Button fx:id="AddUsers_B" mnemonicParsing="false" onAction="#OnClickAddUser" text="Add Users" />
             <ListView id="users_LV" fx:id="User_LV" prefHeight="635.0" prefWidth="201.0" />
          </children>
       </VBox>
@@ -74,12 +74,12 @@
             <ListView id="Messages_LV" fx:id="Message_LV" prefHeight="577.0" prefWidth="543.0" />
             <HBox alignment="BASELINE_CENTER" prefHeight="66.0" prefWidth="543.0" style="-fx-alignment: bottom-center;">
                <children>
-                  <TextField prefHeight="113.0" prefWidth="543.0" promptText="The pen is mightier than the sword!">
+                  <TextField fx:id="Msg_TB" prefHeight="113.0" prefWidth="543.0" promptText="The pen is mightier than the sword!">
                      <font>
                         <Font size="25.0" />
                      </font>
                   </TextField>
-                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" text="Send" />
+                  <Button fx:id="Send_B" mnemonicParsing="false" onAction="#OnClickSend" prefHeight="70.0" prefWidth="140.0" text="Send" />
                </children>
             </HBox>
          </children>
